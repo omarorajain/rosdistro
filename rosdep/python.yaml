@@ -3754,6 +3754,10 @@ python-semver:
   debian: [python-semver]
   fedora: [python-semver]
   ubuntu: [python-semver]
+pyubx2:
+  ubuntu:
+    pip: 
+      packages: [pyubx2]
 python-serial:
   arch: [python2-pyserial]
   debian: [python-serial]
@@ -3763,8 +3767,6 @@ python-serial:
   opensuse: [python2-pyserial]
   ubuntu:
     bionic: [python-serial]
-    pip:
-      packages: [python-serial]
 python-setproctitle:
   debian: [python-setproctitle]
   ubuntu: [python-setproctitle]
