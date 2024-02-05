@@ -3763,6 +3763,7 @@ python-serial:
   opensuse: [python2-pyserial]
   ubuntu:
     bionic: [python-serial]
+    jammy: [python-serial]
 python-setproctitle:
   debian: [python-setproctitle]
   ubuntu: [python-setproctitle]
