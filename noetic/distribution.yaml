@@ -75,6 +75,32 @@ repositories:
       url: https://github.com/ros/actionlib.git
       version: noetic-devel
     status: maintained
+  adi_3dtof_image_stitching:
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/raebelchristo-adi/adi_3dtof_image_stitching-release.git
+      version: 1.1.0-2
+    source:
+      type: git
+      url: https://github.com/analogdevicesinc/adi_3dtof_image_stitching.git
+      version: noetic-devel
+    status: maintained
+  adi_tmc_coe:
+    doc:
+      type: git
+      url: https://github.com/analogdevicesinc/adi_tmc_coe.git
+      version: noetic
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros2-gbp/adi_tmcl_coe-release.git
+      version: 1.0.1-1
+    source:
+      type: git
+      url: https://github.com/analogdevicesinc/adi_tmc_coe.git
+      version: noetic
+    status: maintained
   adi_tmcl:
     doc:
       type: git
@@ -84,7 +110,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros2-gbp/adi_tmcl-release.git
-      version: 4.0.0-1
+      version: 4.0.1-3
     source:
       type: git
       url: https://github.com/analogdevicesinc/tmcl_ros.git
@@ -216,7 +242,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/fictionlab-gbp/aruco_opencv-release.git
-      version: 0.4.0-1
+      version: 0.4.1-1
     source:
       type: git
       url: https://github.com/fictionlab/aruco_opencv.git
@@ -308,6 +334,22 @@ repositories:
       url: https://github.com/fkie/async_web_server_cpp.git
       version: ros1-develop
     status: maintained
+  atf:
+    release:
+      packages:
+      - atf
+      - atf_core
+      - atf_metrics
+      - atf_msgs
+      - atf_plotter
+      - atf_recorder_plugins
+      - atf_test
+      - atf_test_tools
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/floweisshardt/atf-release.git
+      version: 0.1.1-1
+    status: maintained
   audibot:
     doc:
       type: git
@@ -342,7 +384,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/audio_common-release.git
-      version: 0.3.17-1
+      version: 0.3.18-1
     source:
       type: git
       url: https://github.com/ros-drivers/audio_common.git
@@ -391,7 +433,7 @@ repositories:
       type: git
       url: https://github.com/autoware-ai/messages.git
       version: master
-    status: maintained
+    status: end-of-life
   auv_msgs:
     doc:
       type: git
@@ -515,7 +557,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/blackcoffeerobotics/bcr_bot-release.git
-      version: 0.0.1-4
+      version: 0.0.2-1
     source:
       type: git
       url: https://github.com/blackcoffeerobotics/bcr_bot.git
@@ -552,6 +594,27 @@ repositories:
       type: git
       url: https://github.com/BehaviorTree/BehaviorTree.CPP.git
       version: master
+    status: developed
+  beluga:
+    doc:
+      type: git
+      url: https://github.com/Ekumen-OS/beluga.git
+      version: main
+    release:
+      packages:
+      - beluga
+      - beluga_amcl
+      - beluga_ros
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros2-gbp/beluga-release.git
+      version: 2.0.2-1
+    source:
+      test_commits: false
+      test_pull_requests: false
+      type: git
+      url: https://github.com/Ekumen-OS/beluga.git
+      version: main
     status: developed
   bond_core:
     doc:
@@ -670,7 +733,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/FraunhoferIOSB/camera_aravis-release.git
-      version: 4.0.5-3
+      version: 4.1.0-1
     source:
       test_pull_requests: true
       type: git
@@ -697,7 +760,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ipa320/care-o-bot.git
-      version: kinetic_release_candidate
+      version: kinetic_dev
     release:
       packages:
       - care_o_bot
@@ -707,12 +770,12 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/care-o-bot-release.git
-      version: 0.7.10-1
+      version: 0.7.11-1
     source:
       type: git
       url: https://github.com/ipa320/care-o-bot.git
       version: kinetic_dev
-    status: maintained
+    status: end-of-life
   carla_msgs:
     doc:
       type: git
@@ -1013,7 +1076,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/ipa320/cob_android.git
-      version: indigo_release_candidate
+      version: indigo_dev
     release:
       packages:
       - cob_android
@@ -1024,39 +1087,38 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/cob_android-release.git
-      version: 0.1.10-1
+      version: 0.1.11-1
     source:
       type: git
       url: https://github.com/ipa320/cob_android.git
       version: indigo_dev
-    status: maintained
+    status: end-of-life
   cob_calibration_data:
     doc:
       type: git
       url: https://github.com/ipa320/cob_calibration_data.git
-      version: indigo_release_candidate
+      version: indigo_dev
     release:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/cob_calibration_data-release.git
-      version: 0.6.18-1
+      version: 0.6.19-1
     source:
       type: git
       url: https://github.com/ipa320/cob_calibration_data.git
       version: indigo_dev
-    status: maintained
+    status: end-of-life
   cob_command_tools:
     doc:
       type: git
-      url: https://github.com/ipa320/cob_command_tools.git
-      version: indigo_release_candidate
+      url: https://github.com/4am-robotics/cob_command_tools.git
+      version: indigo_dev
     release:
       packages:
       - cob_command_gui
       - cob_command_tools
       - cob_dashboard
       - cob_helper_tools
-      - cob_interactive_teleop
       - cob_monitoring
       - cob_script_server
       - cob_teleop
@@ -1065,18 +1127,18 @@ repositories:
       - service_tools
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/ipa320/cob_command_tools-release.git
-      version: 0.6.33-1
+      url: https://github.com/4am-robotics/cob_command_tools-release.git
+      version: 0.6.35-2
     source:
       type: git
-      url: https://github.com/ipa320/cob_command_tools.git
+      url: https://github.com/4am-robotics/cob_command_tools.git
       version: indigo_dev
-    status: maintained
+    status: end-of-life
   cob_common:
     doc:
       type: git
-      url: https://github.com/ipa320/cob_common.git
-      version: kinetic_release_candidate
+      url: https://github.com/4am-robotics/cob_common.git
+      version: kinetic_dev
     release:
       packages:
       - cob_actions
@@ -1087,18 +1149,18 @@ repositories:
       - raw_description
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/ipa320/cob_common-release.git
-      version: 0.7.9-1
+      url: https://github.com/4am-robotics/cob_common-release.git
+      version: 0.7.11-1
     source:
       type: git
-      url: https://github.com/ipa320/cob_common.git
+      url: https://github.com/4am-robotics/cob_common.git
       version: kinetic_dev
-    status: maintained
+    status: end-of-life
   cob_control:
     doc:
       type: git
-      url: https://github.com/ipa320/cob_control.git
-      version: melodic_release_candidate
+      url: https://github.com/4am-robotics/cob_control.git
+      version: melodic_dev
     release:
       packages:
       - cob_base_controller_utils
@@ -1120,18 +1182,18 @@ repositories:
       - cob_twist_controller
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/ipa320/cob_control-release.git
-      version: 0.8.22-1
+      url: https://github.com/4am-robotics/cob_control-release.git
+      version: 0.8.24-2
     source:
       type: git
-      url: https://github.com/ipa320/cob_control.git
+      url: https://github.com/4am-robotics/cob_control.git
       version: melodic_dev
-    status: maintained
+    status: end-of-life
   cob_driver:
     doc:
       type: git
-      url: https://github.com/ipa320/cob_driver.git
-      version: kinetic_release_candidate
+      url: https://github.com/4am-robotics/cob_driver.git
+      version: kinetic_dev
     release:
       packages:
       - cob_base_drive_chain
@@ -1156,18 +1218,18 @@ repositories:
       - laser_scan_densifier
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/ipa320/cob_driver-release.git
-      version: 0.7.15-1
+      url: https://github.com/4am-robotics/cob_driver-release.git
+      version: 0.7.17-2
     source:
       type: git
-      url: https://github.com/ipa320/cob_driver.git
+      url: https://github.com/4am-robotics/cob_driver.git
       version: kinetic_dev
-    status: maintained
+    status: end-of-life
   cob_environments:
     doc:
       type: git
       url: https://github.com/ipa320/cob_environments.git
-      version: indigo_release_candidate
+      version: indigo_dev
     release:
       packages:
       - cob_default_env_config
@@ -1175,17 +1237,17 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/cob_environments-release.git
-      version: 0.6.13-1
+      version: 0.6.14-1
     source:
       type: git
       url: https://github.com/ipa320/cob_environments.git
       version: indigo_dev
-    status: maintained
+    status: end-of-life
   cob_extern:
     doc:
       type: git
       url: https://github.com/ipa320/cob_extern.git
-      version: indigo_release_candidate
+      version: indigo_dev
     release:
       packages:
       - cob_extern
@@ -1197,17 +1259,32 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/cob_extern-release.git
-      version: 0.6.18-1
+      version: 0.6.19-1
     source:
       type: git
       url: https://github.com/ipa320/cob_extern.git
       version: indigo_dev
-    status: maintained
+    status: end-of-life
+  cob_fiducials:
+    doc:
+      type: git
+      url: https://github.com/4am-robotics/cob_fiducials.git
+      version: kinetic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/4am-robotics/cob_fiducials-release.git
+      version: 0.1.1-1
+    source:
+      type: git
+      url: https://github.com/4am-robotics/cob_fiducials.git
+      version: kinetic-devel
+    status: end-of-life
   cob_gazebo_plugins:
     doc:
       type: git
       url: https://github.com/ipa320/cob_gazebo_plugins.git
-      version: kinetic_release_candidate
+      version: kinetic_dev
     release:
       packages:
       - cob_gazebo_plugins
@@ -1215,17 +1292,17 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/cob_gazebo_plugins-release.git
-      version: 0.7.7-1
+      version: 0.7.8-1
     source:
       type: git
       url: https://github.com/ipa320/cob_gazebo_plugins.git
       version: kinetic_dev
-    status: maintained
+    status: end-of-life
   cob_hand:
     doc:
       type: git
       url: https://github.com/ipa320/cob_hand.git
-      version: indigo_release_candidate
+      version: indigo_dev
     release:
       packages:
       - cob_hand
@@ -1233,17 +1310,17 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/cob_hand-release.git
-      version: 0.6.10-1
+      version: 0.6.11-1
     source:
       type: git
       url: https://github.com/ipa320/cob_hand.git
       version: indigo_dev
-    status: maintained
+    status: end-of-life
   cob_manipulation:
     doc:
       type: git
       url: https://github.com/ipa320/cob_manipulation.git
-      version: kinetic_release_candidate
+      version: kinetic_dev
     release:
       packages:
       - cob_collision_monitor
@@ -1256,17 +1333,17 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/cob_manipulation-release.git
-      version: 0.7.8-1
+      version: 0.7.9-1
     source:
       type: git
       url: https://github.com/ipa320/cob_manipulation.git
       version: kinetic_dev
-    status: maintained
+    status: end-of-life
   cob_navigation:
     doc:
       type: git
       url: https://github.com/ipa320/cob_navigation.git
-      version: indigo_release_candidate
+      version: indigo_dev
     release:
       packages:
       - cob_linear_nav
@@ -1280,17 +1357,17 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/cob_navigation-release.git
-      version: 0.6.14-1
+      version: 0.6.15-1
     source:
       type: git
       url: https://github.com/ipa320/cob_navigation.git
       version: indigo_dev
-    status: maintained
+    status: end-of-life
   cob_perception_common:
     doc:
       type: git
       url: https://github.com/ipa320/cob_perception_common.git
-      version: indigo_release_candidate
+      version: indigo_dev
     release:
       packages:
       - cob_3d_mapping_msgs
@@ -1305,17 +1382,17 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/cob_perception_common-release.git
-      version: 0.6.19-1
+      version: 0.6.20-1
     source:
       type: git
       url: https://github.com/ipa320/cob_perception_common.git
       version: indigo_dev
-    status: maintained
+    status: end-of-life
   cob_robots:
     doc:
       type: git
       url: https://github.com/ipa320/cob_robots.git
-      version: kinetic_release_candidate
+      version: kinetic_dev
     release:
       packages:
       - cob_bringup
@@ -1327,17 +1404,17 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/cob_robots-release.git
-      version: 0.7.9-1
+      version: 0.7.10-1
     source:
       type: git
       url: https://github.com/ipa320/cob_robots.git
       version: kinetic_dev
-    status: maintained
+    status: end-of-life
   cob_simulation:
     doc:
       type: git
       url: https://github.com/ipa320/cob_simulation.git
-      version: kinetic_release_candidate
+      version: kinetic_dev
     release:
       packages:
       - cob_bringup_sim
@@ -1349,17 +1426,17 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/cob_simulation-release.git
-      version: 0.7.7-1
+      version: 0.7.8-1
     source:
       type: git
       url: https://github.com/ipa320/cob_simulation.git
       version: kinetic_dev
-    status: maintained
+    status: end-of-life
   cob_substitute:
     doc:
       type: git
       url: https://github.com/ipa320/cob_substitute.git
-      version: indigo_release_candidate
+      version: indigo_dev
     release:
       packages:
       - cob_docker_control
@@ -1370,27 +1447,27 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/cob_substitute-release.git
-      version: 0.6.12-1
+      version: 0.6.13-1
     source:
       type: git
       url: https://github.com/ipa320/cob_substitute.git
       version: indigo_dev
-    status: maintained
+    status: end-of-life
   cob_supported_robots:
     doc:
       type: git
       url: https://github.com/ipa320/cob_supported_robots.git
-      version: indigo_release_candidate
+      version: indigo_dev
     release:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ipa320/cob_supported_robots-release.git
-      version: 0.6.17-1
+      version: 0.6.18-1
     source:
       type: git
       url: https://github.com/ipa320/cob_supported_robots.git
       version: indigo_dev
-    status: maintained
+    status: end-of-life
   code_coverage:
     doc:
       type: git
@@ -1727,7 +1804,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://gitlab.fel.cvut.cz/cras/ros-release/ros-utils.git
-      version: 2.3.8-1
+      version: 2.4.4-1
     source:
       type: git
       url: https://github.com/ctu-vras/ros-utils.git
@@ -1981,7 +2058,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/luxonis/depthai-core-release.git
-      version: 2.23.0-1
+      version: 2.28.0-1
     source:
       test_pull_requests: true
       type: git
@@ -2005,7 +2082,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/luxonis/depthai-ros-release.git
-      version: 2.9.0-1
+      version: 2.10.3-1
     source:
       test_pull_requests: true
       type: git
@@ -2451,7 +2528,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/stack-of-tasks/eigenpy-ros-release.git
-      version: 3.1.4-5
+      version: 3.8.2-1
     source:
       type: git
       url: https://github.com/stack-of-tasks/eigenpy.git
@@ -2556,7 +2633,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/cubicleguy/ess_imu_driver-release.git
-      version: 1.0.1-3
+      version: 2.0.1-1
     source:
       type: git
       url: https://github.com/cubicleguy/ess_imu_driver.git
@@ -2593,13 +2670,23 @@ repositories:
       version: noetic-devel
     status: maintained
   etsi_its_messages:
+    doc:
+      type: git
+      url: https://github.com/ika-rwth-aachen/etsi_its_messages.git
+      version: main
     release:
       packages:
       - etsi_its_cam_coding
       - etsi_its_cam_conversion
       - etsi_its_cam_msgs
+      - etsi_its_cam_ts_coding
+      - etsi_its_cam_ts_conversion
+      - etsi_its_cam_ts_msgs
       - etsi_its_coding
       - etsi_its_conversion
+      - etsi_its_cpm_ts_coding
+      - etsi_its_cpm_ts_conversion
+      - etsi_its_cpm_ts_msgs
       - etsi_its_denm_coding
       - etsi_its_denm_conversion
       - etsi_its_denm_msgs
@@ -2611,7 +2698,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ika-rwth-aachen/etsi_its_messages-release.git
-      version: 2.0.0-1
+      version: 2.2.0-1
     source:
       type: git
       url: https://github.com/ika-rwth-aachen/etsi_its_messages.git
@@ -2872,11 +2959,19 @@ repositories:
       version: noetic-devel
     status: maintained
   fields2cover:
+    doc:
+      type: git
+      url: https://github.com/Fields2Cover/fields2cover.git
+      version: main
     release:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/Fields2Cover/fields2cover-release.git
-      version: 1.2.1-2
+      version: 2.0.0-4
+    source:
+      type: git
+      url: https://github.com/Fields2Cover/fields2cover.git
+      version: main
     status: developed
   fields2cover_ros:
     doc:
@@ -3090,7 +3185,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/foxglove/ros_foxglove_bridge-release.git
-      version: 0.7.3-1
+      version: 0.7.10-1
     source:
       type: git
       url: https://github.com/foxglove/ros-foxglove-bridge.git
@@ -3405,7 +3500,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/geometric_shapes-release.git
-      version: 0.7.5-1
+      version: 0.7.7-1
     source:
       type: git
       url: https://github.com/ros-planning/geometric_shapes.git
@@ -3524,7 +3619,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://gitlab.fel.cvut.cz/cras/ros-release/gnss-info.git
-      version: 1.0.1-1
+      version: 1.0.2-1
     source:
       type: git
       url: https://github.com/ctu-vras/gnss-info.git
@@ -3539,7 +3634,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://gitlab.fel.cvut.cz/cras/ros-release/gnsstk-release.git
-      version: 14.0.0-8
+      version: 14.3.0-1
     source:
       type: git
       url: https://github.com/SGL-UT/gnsstk.git
@@ -3886,7 +3981,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/humanoid-path-planner/hpp-fcl-ros-release.git
-      version: 2.4.0-1
+      version: 2.4.5-1
     source:
       type: git
       url: https://github.com/humanoid-path-planner/hpp-fcl.git
@@ -3965,7 +4060,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/clearpath-gbp/husky-release.git
-      version: 0.6.9-1
+      version: 0.6.10-1
     source:
       type: git
       url: https://github.com/husky/husky.git
@@ -4079,8 +4174,8 @@ repositories:
       - theora_image_transport
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/image_transport_plugins-release.git
-      version: 1.14.0-1
+      url: https://github.com/ros2-gbp/image_transport_plugins-release.git
+      version: 1.15.0-1
     source:
       test_pull_requests: true
       type: git
@@ -4365,7 +4460,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/clearpath-gbp/jackal-release.git
-      version: 0.8.8-1
+      version: 0.8.10-1
     source:
       type: git
       url: https://github.com/jackal/jackal.git
@@ -4948,7 +5043,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/laser_filters-release.git
-      version: 1.9.0-1
+      version: 1.9.1-2
     source:
       type: git
       url: https://github.com/ros-perception/laser_filters.git
@@ -5073,7 +5168,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/fictionlab-gbp/leo_robot-release.git
-      version: 2.4.0-1
+      version: 2.4.1-2
     source:
       type: git
       url: https://github.com/LeoRover/leo_robot.git
@@ -5184,7 +5279,7 @@ repositories:
   libpointmatcher:
     doc:
       type: git
-      url: https://github.com/ethz-asl/libpointmatcher.git
+      url: https://github.com/norlab-ulaval/libpointmatcher.git
       version: master
     release:
       tags:
@@ -5193,7 +5288,7 @@ repositories:
       version: 1.3.1-1
     source:
       type: git
-      url: https://github.com/ethz-asl/libpointmatcher.git
+      url: https://github.com/norlab-ulaval/libpointmatcher.git
       version: master
     status: maintained
   librealsense2:
@@ -5294,7 +5389,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/locator_ros_bridge-release.git
-      version: 1.0.10-1
+      version: 1.0.11-2
     source:
       type: git
       url: https://github.com/boschglobal/locator_ros_bridge.git
@@ -5324,7 +5419,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/AutonicsLiDAR-release/lsc_ros_driver-release.git
-      version: 1.0.3-1
+      version: 1.0.4-1
     source:
       type: git
       url: https://github.com/AutonicsLiDAR/lsc_ros_driver.git
@@ -5417,12 +5512,30 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/swri-robotics-gbp/mapviz-release.git
-      version: 1.4.2-1
+      version: 1.4.3-1
     source:
       test_pull_requests: true
       type: git
       url: https://github.com/swri-robotics/mapviz.git
       version: master
+    status: developed
+  marine_msgs:
+    doc:
+      type: git
+      url: https://github.com/apl-ocean-engineering/marine_msgs.git
+      version: main
+    release:
+      packages:
+      - marine_acoustic_msgs
+      - marine_sensor_msgs
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/CCOMJHC/marine_msgs-release.git
+      version: 2.0.2-1
+    source:
+      type: git
+      url: https://github.com/apl-ocean-engineering/marine_msgs.git
+      version: main
     status: developed
   marker_msgs:
     doc:
@@ -5519,7 +5632,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mavlink/mavlink-gbp-release.git
-      version: 2023.9.9-1
+      version: 2024.10.10-1
     source:
       type: git
       url: https://github.com/mavlink/mavlink-gbp-release.git
@@ -5540,7 +5653,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mavlink/mavros-release.git
-      version: 1.17.0-1
+      version: 1.20.0-1
     source:
       test_pull_requests: true
       type: git
@@ -5556,7 +5669,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/at-wat/mcl_3dl-release.git
-      version: 0.6.2-1
+      version: 0.6.4-1
     source:
       type: git
       url: https://github.com/at-wat/mcl_3dl.git
@@ -5681,7 +5794,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ika-rwth-aachen/message_tf_frame_transformer-release.git
-      version: 1.1.0-1
+      version: 1.1.1-1
     source:
       type: git
       url: https://github.com/ika-rwth-aachen/message_tf_frame_transformer.git
@@ -5750,6 +5863,7 @@ repositories:
       version: ros
     release:
       packages:
+      - microstrain_inertial_description
       - microstrain_inertial_driver
       - microstrain_inertial_examples
       - microstrain_inertial_msgs
@@ -5757,7 +5871,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/LORD-MicroStrain/microstrain_inertial-release.git
-      version: 3.2.1-1
+      version: 4.4.0-1
     source:
       test_pull_requests: true
       type: git
@@ -5871,6 +5985,21 @@ repositories:
       url: https://github.com/ros-drivers/mocap_optitrack.git
       version: master
     status: maintained
+  mola_common:
+    doc:
+      type: git
+      url: https://github.com/MOLAorg/mola_common.git
+      version: develop
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/mrpt-ros-pkg-release/mola_common-release.git
+      version: 0.4.0-1
+    source:
+      type: git
+      url: https://github.com/MOLAorg/mola_common.git
+      version: develop
+    status: developed
   mongodb_store:
     doc:
       type: git
@@ -6000,7 +6129,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/moveit-release.git
-      version: 1.1.13-2
+      version: 1.1.16-1
     source:
       test_commits: false
       test_pull_requests: false
@@ -6162,7 +6291,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mrpt-ros-pkg-release/mp2p_icp-release.git
-      version: 0.1.0-1
+      version: 1.6.2-2
     source:
       type: git
       url: https://github.com/MOLAorg/mp2p_icp.git
@@ -6215,27 +6344,20 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ika-rwth-aachen/mqtt_client-release.git
-      version: 2.2.0-2
+      version: 2.3.0-1
     source:
       type: git
       url: https://github.com/ika-rwth-aachen/mqtt_client.git
       version: main
     status: maintained
   mrpt2:
-    doc:
-      type: git
-      url: https://github.com/mrpt/mrpt.git
-      version: master
     release:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mrpt-ros-pkg-release/mrpt2-release.git
-      version: 2.11.7-1
-    source:
-      type: git
-      url: https://github.com/mrpt/mrpt.git
-      version: develop
-    status: developed
+      version: 2.13.5-1
+    status: end-of-life
+    status_description: Deprecated by packages mrpt_ros and python_mrpt_ros
   mrpt_msgs:
     doc:
       type: git
@@ -6245,7 +6367,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mrpt-ros-pkg-release/mrpt_msgs-release.git
-      version: 0.4.7-1
+      version: 0.5.0-1
     source:
       type: git
       url: https://github.com/mrpt-ros-pkg/mrpt_msgs.git
@@ -6269,7 +6391,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mrpt-ros-pkg-release/mrpt_navigation-release.git
-      version: 1.0.4-1
+      version: 1.0.7-1
     source:
       type: git
       url: https://github.com/mrpt-ros-pkg/mrpt_navigation.git
@@ -6284,11 +6406,41 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mrpt-ros-pkg-release/mrpt_path_planning-release.git
-      version: 0.1.0-1
+      version: 0.2.1-1
     source:
       type: git
       url: https://github.com/MRPT/mrpt_path_planning.git
       version: develop
+    status: developed
+  mrpt_ros:
+    doc:
+      type: git
+      url: https://github.com/MRPT/mrpt_ros.git
+      version: main
+    release:
+      packages:
+      - mrpt_apps
+      - mrpt_libapps
+      - mrpt_libbase
+      - mrpt_libgui
+      - mrpt_libhwdrivers
+      - mrpt_libmaps
+      - mrpt_libmath
+      - mrpt_libnav
+      - mrpt_libobs
+      - mrpt_libopengl
+      - mrpt_libposes
+      - mrpt_libros_bridge
+      - mrpt_libslam
+      - mrpt_libtclap
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/mrpt-ros-pkg-release/mrpt_ros-release.git
+      version: 2.14.3-1
+    source:
+      type: git
+      url: https://github.com/MRPT/mrpt_ros.git
+      version: main
     status: developed
   mrpt_sensors:
     doc:
@@ -6304,7 +6456,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mrpt-ros-pkg-release/mrpt_sensors-release.git
-      version: 0.0.3-1
+      version: 0.0.4-1
     source:
       type: git
       url: https://github.com/mrpt-ros-pkg/mrpt_sensors.git
@@ -6326,7 +6478,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mrpt-ros-pkg-release/mrpt_slam-release.git
-      version: 0.1.15-1
+      version: 0.1.19-1
     source:
       type: git
       url: https://github.com/mrpt-ros-pkg/mrpt_slam.git
@@ -6341,7 +6493,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/KIT-MRT/mrt_cmake_modules-release.git
-      version: 1.0.4-1
+      version: 1.0.11-1
     source:
       type: git
       url: https://github.com/KIT-MRT/mrt_cmake_modules.git
@@ -6399,7 +6551,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ual-arm-ros-pkg-release/mvsim-release.git
-      version: 0.8.3-1
+      version: 0.11.0-1
     source:
       type: git
       url: https://github.com/ual-arm-ros-pkg/mvsim.git
@@ -6616,7 +6768,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/at-wat/neonavigation-release.git
-      version: 0.17.0-1
+      version: 0.17.1-1
     source:
       type: git
       url: https://github.com/at-wat/neonavigation.git
@@ -6658,7 +6810,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/at-wat/neonavigation_rviz_plugins-release.git
-      version: 0.11.7-1
+      version: 0.17.1-1
     source:
       type: git
       url: https://github.com/at-wat/neonavigation_rviz_plugins.git
@@ -6692,6 +6844,21 @@ repositories:
     source:
       type: git
       url: https://github.com/astuff/network_interface.git
+      version: master
+    status: maintained
+  nicla_vision_ros:
+    doc:
+      type: git
+      url: https://github.com/ADVRHumanoids/nicla_vision_ros.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ADVRHumanoids/nicla_vision_ros-release.git
+      version: 1.0.2-1
+    source:
+      type: git
+      url: https://github.com/ADVRHumanoids/nicla_vision_ros.git
       version: master
     status: maintained
   nmea_comms:
@@ -6806,7 +6973,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/novatel-gbp/novatel_oem7_driver-release.git
-      version: 4.2.0-1
+      version: 4.3.0-5
     source:
       type: git
       url: https://github.com/novatel/novatel_oem7_driver.git
@@ -6836,7 +7003,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/LORD-MicroStrain/ntrip_client-release.git
-      version: 1.2.0-1
+      version: 1.3.0-1
     source:
       test_pull_requests: true
       type: git
@@ -6889,7 +7056,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/octomap_mapping-release.git
-      version: 0.6.7-1
+      version: 0.6.8-1
     source:
       type: git
       url: https://github.com/OctoMap/octomap_mapping.git
@@ -7169,11 +7336,22 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/tork-a/openrtm_aist-release.git
-      version: 1.1.2-4
+      version: 1.1.2-5
     source:
       type: git
       url: https://github.com/tork-a/openrtm_aist-release.git
       version: release/melodic/openrtm_aist
+    status: maintained
+  openrtm_aist_python:
+    doc:
+      type: git
+      url: https://github.com/tork-a/openrtm_aist_python-release.git
+      version: release/noetic/openrtm_aist_python
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/tork-a/openrtm_aist_python-release.git
+      version: 1.1.0-5
     status: maintained
   openslam_gmapping:
     doc:
@@ -7220,6 +7398,20 @@ repositories:
       url: https://github.com/Jmeyer1292/opw_kinematics.git
       version: master
     status: developed
+  ortools_vendor:
+    doc:
+      type: git
+      url: https://github.com/Fields2Cover/ortools_vendor.git
+      version: main
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros2-gbp/ortools_vendor-release.git
+      version: 9.9.0-6
+    source:
+      type: git
+      url: https://github.com/Fields2Cover/ortools_vendor.git
+      version: main
   osqp_vendor:
     doc:
       type: git
@@ -7480,6 +7672,7 @@ repositories:
       - phidgets_drivers
       - phidgets_gyroscope
       - phidgets_high_speed_encoder
+      - phidgets_humidity
       - phidgets_ik
       - phidgets_magnetometer
       - phidgets_motors
@@ -7489,7 +7682,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-drivers-gbp/phidgets_drivers-release.git
-      version: 1.0.8-2
+      version: 1.0.9-1
     source:
       test_pull_requests: true
       type: git
@@ -7638,7 +7831,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/facontidavide/plotjuggler-release.git
-      version: 3.9.0-1
+      version: 3.9.1-1
     source:
       type: git
       url: https://github.com/facontidavide/PlotJuggler.git
@@ -7663,16 +7856,16 @@ repositories:
     doc:
       type: git
       url: https://github.com/PlotJuggler/plotjuggler-ros-plugins.git
-      version: development
+      version: main
     release:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/PlotJuggler/plotjuggler-ros-plugins-release.git
-      version: 2.1.0-1
+      version: 2.1.1-2
     source:
       type: git
       url: https://github.com/PlotJuggler/plotjuggler-ros-plugins.git
-      version: development
+      version: main
     status: developed
   pluginlib:
     doc:
@@ -7699,7 +7892,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ADVRHumanoids/point_cloud2_filters-release.git
-      version: 1.0.2-1
+      version: 1.0.3-1
     source:
       type: git
       url: https://github.com/ADVRHumanoids/point_cloud2_filters.git
@@ -7799,7 +7992,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mrpt-ros-pkg-release/pose_cov_ops-release.git
-      version: 0.3.11-1
+      version: 0.3.12-1
     source:
       type: git
       url: https://github.com/mrpt-ros-pkg/pose_cov_ops.git
@@ -8181,6 +8374,17 @@ repositories:
       url: https://github.com/PilzDE/psen_scan_v2.git
       version: main
     status: developed
+  py_binding_tools:
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/py_binding_tools-release.git
+      version: 1.0.0-1
+    source:
+      type: git
+      url: https://github.com/ros-planning/py_binding_tools.git
+      version: main
+    status: maintained
   py_trees:
     doc:
       type: git
@@ -8272,6 +8476,23 @@ repositories:
       url: https://github.com/Achllle/pyquaternion.git
       version: noetic-devel
     status: maintained
+  python_mrpt_ros:
+    doc:
+      type: git
+      url: https://github.com/MRPT/python_mrpt_ros.git
+      version: main
+    release:
+      packages:
+      - python_mrpt
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/mrpt-ros-pkg-release/python_mrpt_ros-release.git
+      version: 2.14.3-1
+    source:
+      type: git
+      url: https://github.com/MRPT/python_mrpt_ros.git
+      version: main
+    status: developed
   python_qt_binding:
     doc:
       type: git
@@ -8394,7 +8615,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://bitbucket.org/qbrobotics/qbshin-ros-release.git
-      version: 1.0.9-1
+      version: 1.2.5-1
     source:
       type: git
       url: https://bitbucket.org/qbrobotics/qbshin-ros.git
@@ -8532,7 +8753,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/random_numbers-release.git
-      version: 0.3.2-1
+      version: 0.3.3-1
     source:
       test_pull_requests: true
       type: git
@@ -8622,7 +8843,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/roboception-gbp/rc_genicam_api-release.git
-      version: 2.6.1-1
+      version: 2.6.5-1
     source:
       test_pull_requests: true
       type: git
@@ -8836,7 +9057,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/clearpath-gbp/ridgeback-release.git
-      version: 0.3.4-1
+      version: 0.3.5-1
     source:
       type: git
       url: https://github.com/ridgeback/ridgeback.git
@@ -8991,7 +9212,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/fetchrobotics-gbp/robot_controllers-release.git
-      version: 0.7.0-1
+      version: 0.7.1-4
     source:
       test_pull_requests: true
       type: git
@@ -9007,7 +9228,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/cra-ros-pkg/robot_localization-release.git
-      version: 2.7.5-1
+      version: 2.7.7-1
     source:
       test_pull_requests: true
       type: git
@@ -9195,11 +9416,11 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/robotraconteur-packaging/robotraconteur-ros-release.git
-      version: 1.0.0-1
+      version: 1.2.2-3
     source:
       type: git
       url: https://github.com/robotraconteur/robotraconteur.git
-      version: ros-noetic
+      version: ros
     status: maintained
   rocky_tf_monitor:
     doc:
@@ -9314,7 +9535,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/ros_comm-release.git
-      version: 1.16.0-1
+      version: 1.17.0-1
     source:
       test_pull_requests: true
       type: git
@@ -9405,7 +9626,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/ros_controllers-release.git
-      version: 0.21.2-1
+      version: 0.22.0-1
     source:
       type: git
       url: https://github.com/ros-controls/ros_controllers.git
@@ -9426,7 +9647,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/UniversalRobots/Universal_Robots_ROS_controllers_cartesian-release.git
-      version: 0.1.5-1
+      version: 0.1.7-1
     source:
       type: git
       url: https://github.com/UniversalRobots/Universal_Robots_ROS_controllers_cartesian.git
@@ -9654,7 +9875,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/xqms/rosbag_fancy-release.git
-      version: 1.0.1-1
+      version: 1.1.0-1
     source:
       type: git
       url: https://github.com/xqms/rosbag_fancy.git
@@ -10369,7 +10590,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/rqt_pr2_dashboard-release.git
-      version: 0.4.0-1
+      version: 0.4.1-1
     source:
       type: git
       url: https://github.com/pr2/rqt_pr2_dashboard.git
@@ -10675,7 +10896,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/introlab/rtabmap-release.git
-      version: 0.21.3-1
+      version: 0.21.6-1
     source:
       type: git
       url: https://github.com/introlab/rtabmap.git
@@ -10706,7 +10927,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/introlab/rtabmap_ros-release.git
-      version: 0.21.3-4
+      version: 0.21.5-1
     source:
       type: git
       url: https://github.com/introlab/rtabmap_ros.git
@@ -10736,6 +10957,21 @@ repositories:
     source:
       type: git
       url: https://github.com/gbiggs/rtctree.git
+      version: master
+    status: maintained
+  rtshell:
+    doc:
+      type: git
+      url: https://github.com/gbiggs/rtshell.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/tork-a/rtshell-release.git
+      version: 3.0.1-5
+    source:
+      type: git
+      url: https://github.com/gbiggs/rtshell.git
       version: master
     status: maintained
   rtsprofile:
@@ -10773,7 +11009,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/rviz-release.git
-      version: 1.14.20-1
+      version: 1.14.25-1
     source:
       test_pull_requests: true
       type: git
@@ -10891,7 +11127,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/SBG-Systems/sbg_ros_driver-release.git
-      version: 3.1.1-7
+      version: 3.2.0-1
     source:
       type: git
       url: https://github.com/SBG-Systems/sbg_ros_driver.git
@@ -11055,7 +11291,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/septentrio-users/septentrio_gnss_driver-release.git
-      version: 1.3.2-1
+      version: 1.4.1-1
     source:
       test_pull_requests: true
       type: git
@@ -11169,7 +11405,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/SICKAG/sick_scan_xd-release.git
-      version: 3.1.5-1
+      version: 3.5.0-1
     source:
       type: git
       url: https://github.com/SICKAG/sick_scan_xd.git
@@ -11200,7 +11436,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/SICKAG/sick_visionary_ros-release.git
-      version: 1.1.1-1
+      version: 1.1.2-1
     source:
       type: git
       url: https://github.com/SICKAG/sick_visionary_ros.git
@@ -11317,6 +11553,21 @@ repositories:
       type: git
       url: https://github.com/robosoft-ai/smacc.git
       version: noetic-devel
+    status: developed
+  snmp_diagnostics:
+    doc:
+      type: git
+      url: https://github.com/ctu-vras/snmp_diagnostics.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://gitlab.fel.cvut.cz/cras/ros-release/snmp_diagnostics.git
+      version: 0.1.1-1
+    source:
+      type: git
+      url: https://github.com/ctu-vras/snmp_diagnostics.git
+      version: master
     status: developed
   snmp_ros:
     doc:
@@ -11547,7 +11798,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/peci1/static_transform_mux-release.git
-      version: 1.1.1-1
+      version: 1.1.2-1
     source:
       type: git
       url: https://github.com/tradr-project/static_transform_mux.git
@@ -11852,6 +12103,21 @@ repositories:
       url: https://github.com/ThundeRatz/thunder_line_follower_pmr3100.git
       version: master
     status: developed
+  timed_roslaunch:
+    doc:
+      type: git
+      url: https://github.com/Tiryoh/timed_roslaunch.git
+      version: noetic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/Tiryoh/timed_roslaunch-release.git
+      version: 0.2.0-1
+    source:
+      type: git
+      url: https://github.com/Tiryoh/timed_roslaunch.git
+      version: noetic-devel
+    status: maintained
   trac_ik:
     doc:
       type: git
@@ -12110,8 +12376,8 @@ repositories:
     release:
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/flynneva/udp_msgs-release.git
-      version: 0.0.4-1
+      url: https://github.com/ros2-gbp/udp_msgs-release.git
+      version: 0.0.5-1
     source:
       type: git
       url: https://github.com/flynneva/udp_msgs.git
@@ -12180,6 +12446,7 @@ repositories:
       - ur10e_moveit_config
       - ur16e_moveit_config
       - ur20_moveit_config
+      - ur30_moveit_config
       - ur3_moveit_config
       - ur3e_moveit_config
       - ur5_moveit_config
@@ -12189,7 +12456,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-industrial-release/universal_robot-release.git
-      version: 1.3.2-1
+      version: 1.3.3-1
     source:
       type: git
       url: https://github.com/ros-industrial/universal_robot.git
@@ -12204,7 +12471,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/UniversalRobots/Universal_Robots_Client_Library-release.git
-      version: 1.3.4-1
+      version: 1.4.0-1
     source:
       type: git
       url: https://github.com/UniversalRobots/Universal_Robots_Client_Library.git
@@ -12214,16 +12481,16 @@ repositories:
     doc:
       type: git
       url: https://github.com/ros-industrial/ur_msgs.git
-      version: melodic
+      version: noetic
     release:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-industrial-release/ur_msgs-release.git
-      version: 1.3.4-1
+      version: 1.4.0-1
     source:
       type: git
       url: https://github.com/ros-industrial/ur_msgs.git
-      version: melodic-devel
+      version: noetic-devel
     status: maintained
   ur_robot_driver:
     doc:
@@ -12238,7 +12505,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/UniversalRobots/Universal_Robots_ROS_Driver-release.git
-      version: 2.1.3-1
+      version: 2.1.5-1
     source:
       type: git
       url: https://github.com/UniversalRobots/Universal_Robots_ROS_Driver.git
@@ -12363,7 +12630,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/seqsense/urg_stamped-release.git
-      version: 0.0.17-1
+      version: 0.3.0-1
     source:
       type: git
       url: https://github.com/seqsense/urg_stamped.git
@@ -12767,7 +13034,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/warehouse_ros_sqlite-release.git
-      version: 0.9.0-1
+      version: 0.9.1-1
     source:
       type: git
       url: https://github.com/ros-planning/warehouse_ros_sqlite.git
@@ -12786,7 +13053,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/clearpath-gbp/warthog-release.git
-      version: 0.1.8-1
+      version: 0.1.9-1
     source:
       type: git
       url: https://github.com/warthog-cpr/warthog.git
@@ -13000,7 +13267,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ros-gbp/xacro-release.git
-      version: 1.14.17-2
+      version: 1.14.18-1
     source:
       test_pull_requests: true
       type: git
@@ -13068,7 +13335,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/openspur/yp-spur-release.git
-      version: 1.20.2-1
+      version: 1.22.5-1
     source:
       type: git
       url: https://github.com/openspur/yp-spur.git
@@ -13083,7 +13350,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/openspur/ypspur_ros-release.git
-      version: 0.3.6-1
+      version: 0.6.0-1
     source:
       type: git
       url: https://github.com/openspur/ypspur_ros.git
