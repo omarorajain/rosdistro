@@ -1106,6 +1106,10 @@ repositories:
       version: jazzy
     status: developed
   create3_sim:
+    doc:
+      type: git
+      url: https://github.com/iRobotEducation/create3_sim.git
+      version: jazzy
     release:
       packages:
       - irobot_create_common_bringup
@@ -1120,11 +1124,11 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/create3_sim-release.git
-      version: 3.0.3-1
+      version: 3.0.4-1
     source:
       type: git
       url: https://github.com/iRobotEducation/create3_sim.git
-      version: main
+      version: jazzy
     status: developed
   cudnn_cmake_module:
     doc:
@@ -1578,6 +1582,21 @@ repositories:
       url: https://github.com/stack-of-tasks/eigenpy.git
       version: devel
     status: maintained
+  ess_imu_driver2:
+    doc:
+      type: git
+      url: https://github.com/cubicleguy/ess_imu_driver2.git
+      version: jazzy
+    release:
+      tags:
+        release: release/jazzy/{package}/{version}
+      url: https://github.com/ros2-gbp/ess_imu_driver2-release.git
+      version: 2.0.2-1
+    source:
+      type: git
+      url: https://github.com/cubicleguy/ess_imu_driver2.git
+      version: jazzy
+    status: maintained
   etsi_its_messages:
     doc:
       type: git
@@ -1753,7 +1772,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/fastrtps-release.git
-      version: 2.14.1-1
+      version: 2.14.3-1
     source:
       test_commits: true
       test_pull_requests: false
@@ -2400,7 +2419,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_common_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2410,13 +2429,13 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/gz_common_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_dartsim_vendor:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_dartsim_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2426,13 +2445,13 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/gz_dartsim_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_fuel_tools_vendor:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_fuel_tools_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2442,13 +2461,13 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/gz_fuel_tools_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_gui_vendor:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_gui_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2457,13 +2476,13 @@ repositories:
     source:
       type: git
       url: https://github.com/gazebo-release/gz_gui_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_launch_vendor:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_launch_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2473,7 +2492,7 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/gz_launch_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_math_vendor:
     doc:
@@ -2495,7 +2514,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_msgs_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2505,13 +2524,13 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/gz_msgs_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_ogre_next_vendor:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_ogre_next_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2521,13 +2540,13 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/gz_ogre_next_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_physics_vendor:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_physics_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2537,13 +2556,13 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/gz_physics_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_plugin_vendor:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_plugin_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2553,13 +2572,13 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/gz_plugin_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_rendering_vendor:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_rendering_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2569,7 +2588,7 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/gz_rendering_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_ros2_control:
     doc:
@@ -2593,7 +2612,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_sensors_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2603,13 +2622,13 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/gz_sensors_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_sim_vendor:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_sim_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2619,13 +2638,13 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/gz_sim_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_tools_vendor:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_tools_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2635,13 +2654,13 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/gz_tools_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_transport_vendor:
     doc:
       type: git
       url: https://github.com/gazebo-release/gz_transport_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -2651,7 +2670,7 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/gz_transport_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   gz_utils_vendor:
     doc:
@@ -4100,7 +4119,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/mrpt_ros-release.git
-      version: 2.14.3-1
+      version: 2.14.4-1
     source:
       type: git
       url: https://github.com/MRPT/mrpt_ros.git
@@ -4153,7 +4172,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/mvsim-release.git
-      version: 0.11.0-1
+      version: 0.11.1-1
     source:
       type: git
       url: https://github.com/MRPT/mvsim.git
@@ -5334,7 +5353,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/python_mrpt_ros-release.git
-      version: 2.14.3-1
+      version: 2.14.4-1
     source:
       type: git
       url: https://github.com/MRPT/python_mrpt_ros.git
@@ -6214,6 +6233,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/rmw_gurumdds-release.git
+      version: 5.0.0-1
     source:
       type: git
       url: https://github.com/ros2/rmw_gurumdds.git
@@ -6605,7 +6625,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/ros_babel_fish-release.git
-      version: 0.9.3-1
+      version: 0.10.0-1
     source:
       type: git
       url: https://github.com/LOEWE-emergenCITY/ros2_babel_fish.git
@@ -7698,6 +7718,22 @@ repositories:
       url: https://github.com/PickNikRobotics/rviz_visual_tools.git
       version: ros2
     status: maintained
+  sbg_driver:
+    doc:
+      type: git
+      url: https://github.com/SBG-Systems/sbg_ros2.git
+      version: master
+    release:
+      tags:
+        release: release/jazzy/{package}/{version}
+      url: https://github.com/SBG-Systems/sbg_ros2-release.git
+      version: 3.2.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/SBG-Systems/sbg_ros2.git
+      version: master
+    status: developed
   scenario_execution:
     doc:
       type: git
@@ -7748,7 +7784,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/gazebo-release/sdformat_vendor.git
-      version: rolling
+      version: jazzy
     release:
       tags:
         release: release/jazzy/{package}/{version}
@@ -7758,7 +7794,7 @@ repositories:
       test_pull_requests: true
       type: git
       url: https://github.com/gazebo-release/sdformat_vendor.git
-      version: rolling
+      version: jazzy
     status: maintained
   septentrio_gnss_driver:
     doc:
@@ -8604,7 +8640,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/turtlebot4_robot-release.git
-      version: 2.0.0-1
+      version: 2.0.1-2
     source:
       type: git
       url: https://github.com/turtlebot/turtlebot4_robot.git
@@ -8619,7 +8655,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/turtlebot4_setup-release.git
-      version: 2.0.1-1
+      version: 2.0.2-1
     source:
       type: git
       url: https://github.com/turtlebot/turtlebot4_setup.git
@@ -8757,7 +8793,7 @@ repositories:
       tags:
         release: release/jazzy/{package}/{version}
       url: https://github.com/ros2-gbp/ublox_dgnss-release.git
-      version: 0.5.3-2
+      version: 0.5.4-1
     source:
       type: git
       url: https://github.com/aussierobots/ublox_dgnss.git

@@ -76,6 +76,10 @@ repositories:
       version: noetic-devel
     status: maintained
   adi_3dtof_image_stitching:
+    doc:
+      type: git
+      url: https://github.com/analogdevicesinc/adi_3dtof_image_stitching.git
+      version: noetic-devel
     release:
       tags:
         release: release/noetic/{package}/{version}
@@ -2653,7 +2657,8 @@ repositories:
       type: git
       url: https://github.com/cubicleguy/ess_imu_ros1_uart_driver.git
       version: main
-    status: unmaintained
+    status: end-of-life
+    status_description: This is deprecated. Please use ess_imu_driver (See https://wiki.ros.org/ess_imu_driver)
   ethercat_grant:
     doc:
       type: git
@@ -2695,10 +2700,13 @@ repositories:
       - etsi_its_msgs_utils
       - etsi_its_primitives_conversion
       - etsi_its_rviz_plugins
+      - etsi_its_vam_ts_coding
+      - etsi_its_vam_ts_conversion
+      - etsi_its_vam_ts_msgs
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ika-rwth-aachen/etsi_its_messages-release.git
-      version: 2.2.0-1
+      version: 2.3.0-1
     source:
       type: git
       url: https://github.com/ika-rwth-aachen/etsi_its_messages.git
@@ -6436,7 +6444,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mrpt-ros-pkg-release/mrpt_ros-release.git
-      version: 2.14.3-1
+      version: 2.14.4-1
     source:
       type: git
       url: https://github.com/MRPT/mrpt_ros.git
@@ -6551,7 +6559,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/ual-arm-ros-pkg-release/mvsim-release.git
-      version: 0.11.0-1
+      version: 0.11.2-1
     source:
       type: git
       url: https://github.com/ual-arm-ros-pkg/mvsim.git
@@ -8487,7 +8495,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/mrpt-ros-pkg-release/python_mrpt_ros-release.git
-      version: 2.14.3-1
+      version: 2.14.4-1
     source:
       type: git
       url: https://github.com/MRPT/python_mrpt_ros.git
@@ -11405,7 +11413,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://github.com/SICKAG/sick_scan_xd-release.git
-      version: 3.5.0-1
+      version: 3.6.0-1
     source:
       type: git
       url: https://github.com/SICKAG/sick_scan_xd.git

@@ -2563,7 +2563,7 @@ repositories:
       tags:
         release: release/rolling/{package}/{version}
       url: https://github.com/ros2-gbp/image_pipeline-release.git
-      version: 6.0.3-1
+      version: 6.0.4-1
     source:
       test_pull_requests: true
       type: git
@@ -3371,7 +3371,7 @@ repositories:
       tags:
         release: release/rolling/{package}/{version}
       url: https://github.com/ros2-gbp/ros2_message_filters-release.git
-      version: 6.0.5-1
+      version: 6.0.6-1
     source:
       test_pull_requests: true
       type: git
@@ -3816,7 +3816,7 @@ repositories:
       tags:
         release: release/rolling/{package}/{version}
       url: https://github.com/ros2-gbp/mrpt_ros-release.git
-      version: 2.14.3-1
+      version: 2.14.4-1
     source:
       type: git
       url: https://github.com/MRPT/mrpt_ros.git
@@ -3869,7 +3869,7 @@ repositories:
       tags:
         release: release/rolling/{package}/{version}
       url: https://github.com/ros2-gbp/mvsim-release.git
-      version: 0.11.0-1
+      version: 0.11.1-1
     source:
       test_pull_requests: true
       type: git
@@ -4190,7 +4190,7 @@ repositories:
       tags:
         release: release/rolling/{package}/{version}
       url: https://github.com/ros2-gbp/octomap_rviz_plugins-release.git
-      version: 2.1.0-1
+      version: 2.1.1-1
     source:
       type: git
       url: https://github.com/OctoMap/octomap_rviz_plugins.git
@@ -4928,7 +4928,7 @@ repositories:
       tags:
         release: release/rolling/{package}/{version}
       url: https://github.com/ros2-gbp/python_mrpt_ros-release.git
-      version: 2.14.3-1
+      version: 2.14.4-1
     source:
       type: git
       url: https://github.com/MRPT/python_mrpt_ros.git
@@ -5816,6 +5816,7 @@ repositories:
       tags:
         release: release/rolling/{package}/{version}
       url: https://github.com/ros2-gbp/rmw_gurumdds-release.git
+      version: 5.0.0-1
     source:
       type: git
       url: https://github.com/ros2/rmw_gurumdds.git
@@ -6192,7 +6193,7 @@ repositories:
       tags:
         release: release/rolling/{package}/{version}
       url: https://github.com/ros2-gbp/ros_babel_fish-release.git
-      version: 0.9.5-1
+      version: 0.10.1-1
     source:
       type: git
       url: https://github.com/LOEWE-emergenCITY/ros2_babel_fish.git
@@ -8091,7 +8092,7 @@ repositories:
       tags:
         release: release/rolling/{package}/{version}
       url: https://github.com/ros2-gbp/ublox_dgnss-release.git
-      version: 0.5.3-1
+      version: 0.5.4-3
     source:
       type: git
       url: https://github.com/aussierobots/ublox_dgnss.git
